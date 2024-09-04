@@ -220,7 +220,7 @@
       "governance.proposal.updateNetParam.requiredMajority": "0.66",
       "governance.proposal.updateNetParam.requiredParticipation": "0.1",
       "limits.assets.proposeEnabledFrom": "2024-08-01T00:00:00Z",
-      "limits.markets.ammPoolEnabled": "1",
+      "limits.markets.ammPoolEnabled": "0",
       "limits.markets.maxPeggedOrders": "1500",
       "limits.markets.proposeEnabledFrom": "2024-08-01T00:00:00Z",
       "limits.markets.proposePerpetualEnabled": "1",
