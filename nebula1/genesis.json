@@ -64,7 +64,7 @@
         "quantum": "50000000000000000000",
         "source": {
           "erc20": {
-            "contract_address": "0x6e9e554bbCa46Cd86684f85F4037360bDA382069",
+            "contract_address": "0x1130C6e0962B951c2e1d3a2e6331496Bdd6ec4ED",
             "lifetime_limit": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
             "withdraw_threshold": "0",
             "chain_id": "1"
@@ -132,7 +132,7 @@
     },
     "network_parameters": {
       "auction.LongBlock": "{\"threshold_and_duration\": [{\"threshold\":\"10s\",\"duration\":\"1m\"},{\"threshold\":\"1m\",\"duration\":\"5m\"},{\"threshold\":\"10m\",\"duration\":\"1h\"},{\"threshold\":\"1h\",\"duration\":\"1h\"},{\"threshold\":\"6h\",\"duration\":\"3h\"},{\"threshold\":\"24h\",\"duration\":\"6h\"}]}",
-      "blockchains.ethereumConfig": "{\"network_id\": \"1\", \"chain_id\": \"1\", \"block_time\": \"12s\", \"collateral_bridge_contract\": { \"address\": \"0xfFa082488BeC476f2B644c03312f481fa04DF163\" }, \"confirmations\": 64, \"staking_bridge_contract\": { \"address\": \"0x6D149d0B1bC0d5252a05B2A0C7E57aC93c162c4d\", \"deployment_block_height\": 20618393}, \"multisig_control_contract\": { \"address\": \"0x39fB20358E965d033C4ef6cc024dfBc00Fa72060\", \"deployment_block_height\": 20620175 }}",
+      "blockchains.ethereumConfig": "{\"network_id\": \"1\", \"chain_id\": \"1\", \"block_time\": \"12s\", \"collateral_bridge_contract\": { \"address\": \"0xfFa082488BeC476f2B644c03312f481fa04DF163\" }, \"confirmations\": 64, \"staking_bridge_contract\": { \"address\": \"0x1Ea66bCe0B8aB4453ECf374B3A47F8D6D7Ea089A\", \"deployment_block_height\": 20684321}, \"multisig_control_contract\": { \"address\": \"0x39fB20358E965d033C4ef6cc024dfBc00Fa72060\", \"deployment_block_height\": 20620175 }}",
       "blockchains.ethereumRpcAndEvmCompatDataSourcesConfig": "{\"configs\":[{\"network_id\":\"100\",\"chain_id\":\"100\",\"confirmations\":3,\"name\":\"Gnosis Chain\", \"block_interval\": 3}, {\"network_id\":\"42161\",\"chain_id\":\"42161\",\"confirmations\":3,\"name\":\"Arbitrum One\", \"block_interval\": 50}]}",
       "blockchains.evmBridgeConfigs": "{\"configs\": [{\"network_id\": \"42161\", \"chain_id\": \"42161\", \"block_time\": \"250ms\", \"name\": \"Arbitrum One\", \"collateral_bridge_contract\": { \"address\": \"0xfFa082488BeC476f2B644c03312f481fa04DF16\" }, \"confirmations\": 3, \"multisig_control_contract\": {\"address\": \"0x39fB20358E965d033C4ef6cc024dfBc00Fa72060\", \"deployment_block_height\": 247243049}}]}",
       "ethereum.oracles.enabled": "1",
