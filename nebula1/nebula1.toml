@@ -1,0 +1,27 @@
+FileVersion = 2
+
+Name = "nebula1"
+
+[[Metadata]]
+Key = "network"
+Value = "mainnet"
+
+[API]
+  [API.GRPC]
+    Hosts = [
+      "api0.neb.exchange:3007",
+    ]
+    Retries = 5
+  [API.REST]
+    Hosts = [
+      "https://api0.neb.exchange",
+    ]
+  [API.GraphQL]
+    Hosts = [
+      "https://api0.neb.exchange/graphql",
+    ]
+
+[Apps]
+Console = "https://trade.neb.exchange"
+Governance = "https://governance.neb.exchange"
+Explorer = "https://explorer.neb.exchange"
