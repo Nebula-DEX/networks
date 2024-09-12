@@ -17,6 +17,5 @@ AutoInitialiseFromNetworkHistory = false # this should be enable only for the fi
     [NetworkHistory.Initialise]
         MinimumBlockCount = 100
     [NetworkHistory.Store]
-        BootstrapPeers = []
+        BootstrapPeers = ["/dns/api0.neb.exchange/tcp/4001/ipfs/12D3KooWBEiFW25wWBdoDZq6KTLbDywxghaP8r4UicBsuYLfLUMj", "/dns/api0.neb.exchange/tcp/4001/ipfs/12D3KooWBEiFW25wWBdoDZq6KTLbDywxghaP8r4UicBsuYLfLUMj"]
         HistoryRetentionBlockSpan = 100000 # 100k blocks is ~ 48h
-        
