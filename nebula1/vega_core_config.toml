@@ -1,0 +1,10 @@
+[Blockchain.Tendermint]
+    RPCAddr = "127.0.0.1:26657"
+
+[Broker]
+    [Broker.Socket]
+        Enabled = false # true when data-node connected to this node
+
+
+[Snapshot]
+    KeepRecent = 10 # increase to about 50-100 when you run data-node

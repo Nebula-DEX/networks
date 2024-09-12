@@ -1,0 +1,22 @@
+AutoInitialiseFromNetworkHistory = false # this should be enable only for the first start when you start the data-node from the remote Snapshot then it MUST be DISABLED
+
+[SQLStore]
+    RetentionPeriod = "standard"
+
+    [SQLStore.ConnectionConfig]
+        Host = "localhost"
+        Port = 5432
+        Username = "vega"
+        Password = "vega"
+        Database = "vega"
+
+[NetworkHistory]
+    FetchRetryMax = 10
+    Publish = true
+    RetryTimeout = "15s"
+    [NetworkHistory.Initialise]
+        MinimumBlockCount = 100
+    [NetworkHistory.Store]
+        BootstrapPeers = []
+        HistoryRetentionBlockSpan = 100000 # 100k blocks is ~ 48h
+        
