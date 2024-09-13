@@ -1,0 +1,24 @@
+name = "genesis"
+
+[vega]
+  [vega.binary]
+    path = "vega"
+    args = [
+      "start",
+      "--home", ".../vega_home",
+      "--tendermint-home", ".../cometbft_home",
+      "--nodewallet-passphrase-file", ".../.passphrase.txt",
+      "--network-url", "https://raw.githubusercontent.com/Nebula-DEX/networks/main/nebula1/genesis.json"
+    ]
+  [vega.rpc]
+    socketPath = "/tmp/vega.sock"
+    httpPath = "/rpc"
+
+# remove below if you do not run data-node
+[data_node]
+  [data_node.binary]
+    path = "vega"
+    args = [
+      "datanode", "start",
+      "--home", "/home/vega/vega_home",
+    ]
