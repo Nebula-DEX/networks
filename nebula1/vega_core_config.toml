@@ -1,5 +1,7 @@
+# DO NOT REPLACE entire config for your validator with this file. Use this file as guide for important values you have to update/add in your config. You may copy specific values to your config
+
 [Blockchain.Tendermint]
-    RPCAddr = "127.0.0.1:26657"
+    RPCAddr = "tcp://127.0.0.1:26657"
 
 [Broker]
     [Broker.Socket]
@@ -8,3 +10,36 @@
 
 [Snapshot]
     KeepRecent = 10 # increase to about 50-100 when you run data-node
+
+
+[Ethereum]
+  RPCEndpoint = "archival-ethereum-mainnet-rpc-endpoint"
+  RetryDelay = "15s"
+
+  [[Ethereum.EVMBridgeConfigs]]
+    ChainID = "42161"
+    RPCEndpoint = "archival-arbitrum-one-rpc-endpoint"
+
+  [[Ethereum.EVMChainConfigs]]
+    ChainID = "100"
+    RPCEndpoint = "full-or-archival-gnosis-rpc-endpoint"
+
+  [[Ethereum.EVMChainConfigs]]
+    ChainID = "42161"
+    RPCEndpoint = "full-or-archival-arbitrum-one-rpc-endpoint"
+
+
+[EvtForward]
+  [EvtForward.Ethereum]
+    MaxEthereumBlocks = 10000
+    ChainID = "1"
+
+  [[EvtForward.EVMBridges]]
+    Level = "Info"
+    MaxEthereumBlocks = 500
+    PollEventRetryDuration = "500ms"
+    ChainID = "42161"
+    SkipClientVerification = true
+    HeartbeatIntervalForTestOnlyDoNotChange = "0s"
+  [EvtForward.EthCall]
+    PollEvery = "20s"

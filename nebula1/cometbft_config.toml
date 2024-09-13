@@ -1,11 +1,12 @@
+# DO NOT REPLACE entire config for your validator with this file. Use this file as guide for important values you have to update/add in your config. You may copy specific values to your config
+
 [p2p]
 pex = true
-seeds = "4567c84f2d62e252d3ee4cbe691e38edb6d72d74@185.198.234.44:26656,00ec120e907bbe238dff50f229200ad3c42f51bb@185.198.234.88:26656"
-persistent_peers = "81427e8bf332e9b26cad5e79a8decbfd69e76677@185.198.234.18:26656,1fe60e0c397c7665b41c99a24da3bfc8d6308ff2@185.198.234.22:26656"
+persistent_peers = "4567c84f2d62e252d3ee4cbe691e38edb6d72d74@185.198.234.44:26656,00ec120e907bbe238dff50f229200ad3c42f51bb@185.198.234.88:26656,81427e8bf332e9b26cad5e79a8decbfd69e76677@185.198.234.18:26656,1fe60e0c397c7665b41c99a24da3bfc8d6308ff2@185.198.234.22:26656"
 
 
 [statesync]
-enable = false
+enable = false # enable it only for single restart when you want to state-sync your node.
 
 rpc_servers = "185.198.234.18:26657,185.198.234.22:26657,185.198.234.44:26657,185.198.234.88:26657"
 trust_height = 0
