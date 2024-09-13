@@ -1,5 +1,7 @@
 # DO NOT REPLACE entire config for your validator with this file. Use this file as guide for important values you have to update/add in your config. You may copy specific values to your config
 
+MaxMemoryPercent = 90 # reduce it to about 33 when you are running data-node on the same boxes.
+
 [Blockchain.Tendermint]
     RPCAddr = "tcp://127.0.0.1:26657"
 

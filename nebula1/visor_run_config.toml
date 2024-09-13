@@ -1,4 +1,4 @@
-name = "<insert_vega_version_here>"
+name = "genesis"
 
 [vega]
   [vega.binary]
@@ -8,6 +8,7 @@ name = "<insert_vega_version_here>"
       "--home", ".../vega_home",
       "--tendermint-home", ".../cometbft_home",
       "--nodewallet-passphrase-file", ".../.passphrase.txt",
+      "--network-url", "https://raw.githubusercontent.com/Nebula-DEX/networks/main/nebula1/genesis.json"
     ]
   [vega.rpc]
     socketPath = "/tmp/vega.sock"

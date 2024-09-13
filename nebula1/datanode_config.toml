@@ -1,6 +1,8 @@
 # DO NOT REPLACE entire config for your validator with this file. Use this file as guide for important values you have to update/add in your config. You may copy specific values to your config
 
 AutoInitialiseFromNetworkHistory = false # this should be enable only for the first start when you start the data-node from the remote Snapshot then it MUST be DISABLED
+ChainID = "nebula1"
+MaxMemoryPercent = 33
 
 [SQLStore]
     RetentionPeriod = "standard"
