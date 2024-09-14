@@ -10,15 +10,21 @@ Value = "mainnet"
   [API.GRPC]
     Hosts = [
       "api0.neb.exchange:3007",
+      "api1.neb.exchange:3007",
+      "api2.neb.exchange:3007",
     ]
     Retries = 5
   [API.REST]
     Hosts = [
       "https://api0.neb.exchange",
+      "https://api1.neb.exchange",
+      "https://api2.neb.exchange",
     ]
   [API.GraphQL]
     Hosts = [
       "https://api0.neb.exchange/graphql",
+      "https://api1.neb.exchange/graphql",
+      "https://api2.neb.exchange/graphql",
     ]
 
 [Apps]
