@@ -1,0 +1,49 @@
+# Config for the https://github.com/vegaprotocol/snapshot-testing tool
+
+artifacts_repository = "vegaprotocol/vega"
+genesis_url = "https://raw.githubusercontent.com/Nebula-DEX/networks/main/nebula1/genesis.json"
+binary_version_override = "v0.78.4-patch.1"
+
+data_nodes_rest = [
+  "https://api0.neb.exchange",
+	"https://api1.neb.exchange",
+	"https://api2.neb.exchange",
+]
+
+seeds = [
+    "81427e8bf332e9b26cad5e79a8decbfd69e76677@185.198.234.18:26656",
+	"1fe60e0c397c7665b41c99a24da3bfc8d6308ff2@185.198.234.22:26656",
+	"4567c84f2d62e252d3ee4cbe691e38edb6d72d74@185.198.234.44:26656",
+	"00ec120e907bbe238dff50f229200ad3c42f51bb@api0.neb.exchange:26656",
+	"33a8691c187d7b9e0a7c358f9bbf1aebf099a24b@api1.neb.exchange:26656",
+	"b195c6925af99f70c715088f8362eb1dc1ba9592@api2.neb.exchange:26656",
+]
+
+[[rpc_peers]]
+    core_rest = "http://185.198.234.18:3003"
+    endpoint = "185.198.234.18:26657"
+[[rpc_peers]]
+    core_rest = "http://185.198.234.22:3003"
+    endpoint = "185.198.234.22:26657"
+[[rpc_peers]]
+    core_rest = "http://185.198.234.44:3003"
+    endpoint = "185.198.234.44:26657"
+[[rpc_peers]]
+    core_rest = "https://api0.neb.exchange"
+    endpoint = "api0.neb.exchange:26657"
+[[rpc_peers]]
+    core_rest = "https://api1.neb.exchange"
+    endpoint = "api1.neb.exchange:26657"
+[[rpc_peers]]
+    core_rest = "https://api2.neb.exchange"
+    endpoint = "api2.neb.exchange:26657"
+
+[[bootstrap_peers]]
+    core_rest = "https://api0.neb.exchange"
+    endpoint = "/dns/api0.neb.exchange/tcp/4001/ipfs/12D3KooWBEiFW25wWBdoDZq6KTLbDywxghaP8r4UicBsuYLfLUMj"
+[[bootstrap_peers]]
+    core_rest = "https://api1.neb.exchange"
+    endpoint = "/dns/api1.neb.exchange/tcp/4001/ipfs/12D3KooWJ1druRg7jiu9DGJvtKGzPspGGKmE8WgnmHXjSmg6qoZo"
+[[bootstrap_peers]]
+    core_rest = "https://api2.neb.exchange"
+    endpoint = "/dns/api2.neb.exchange/tcp/4001/ipfs/12D3KooWRGeS5xiJK54ddWaYXy4VxHGzLcN89kaFNS95JgcSSS7z"
