@@ -2,16 +2,16 @@
 
 artifacts_repository = "vegaprotocol/vega"
 genesis_url = "https://raw.githubusercontent.com/Nebula-DEX/networks/main/nebula1/genesis.json"
-binary_version_override = "v0.78.4-patch.1"
+# binary_version_override = "v0.78.4-patch.1"
 
 data_nodes_rest = [
-  "https://api0.neb.exchange",
+	"https://api0.neb.exchange",
 	"https://api1.neb.exchange",
 	"https://api2.neb.exchange",
 ]
 
 seeds = [
-    "81427e8bf332e9b26cad5e79a8decbfd69e76677@185.198.234.18:26656",
+	"81427e8bf332e9b26cad5e79a8decbfd69e76677@185.198.234.18:26656",
 	"1fe60e0c397c7665b41c99a24da3bfc8d6308ff2@185.198.234.22:26656",
 	"4567c84f2d62e252d3ee4cbe691e38edb6d72d74@185.198.234.44:26656",
 	"00ec120e907bbe238dff50f229200ad3c42f51bb@api0.neb.exchange:26656",
