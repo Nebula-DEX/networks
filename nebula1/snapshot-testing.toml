@@ -2,7 +2,7 @@
 
 artifacts_repository = "vegaprotocol/vega"
 genesis_url = "https://raw.githubusercontent.com/Nebula-DEX/networks/main/nebula1/genesis.json"
-# binary_version_override = "v0.78.4-patch.1"
+binary_version_override = "v0.79.0-datanode.1"
 
 data_nodes_rest = [
 	"https://api0.neb.exchange",
