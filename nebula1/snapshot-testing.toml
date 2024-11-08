@@ -1,6 +1,6 @@
 # Config for the https://github.com/vegaprotocol/snapshot-testing tool
 
-artifacts_repository = "vegaprotocol/vega"
+artifacts_repository = "nebula-dex/vega"
 genesis_url = "https://raw.githubusercontent.com/Nebula-DEX/networks/main/nebula1/genesis.json"
 binary_version_override = "v0.79.0-datanode.1"
 
