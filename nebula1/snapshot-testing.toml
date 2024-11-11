@@ -35,9 +35,6 @@ seeds = [
     core_rest = "http://185.198.234.44:3003"
     endpoint = "185.198.234.44:26657"
 [[rpc_peers]]
-    core_rest = "https://api0.neb.exchange"
-    endpoint = "api0.neb.exchange:26657"
-[[rpc_peers]]
     core_rest = "https://api1.neb.exchange"
     endpoint = "api1.neb.exchange:26657"
 [[rpc_peers]]
