@@ -8,6 +8,7 @@ data_nodes_rest = [
 	"https://api0.neb.exchange",
 	"https://api1.neb.exchange",
 	"https://api2.neb.exchange",
+	"https://api3.neb.exchange",
 ]
 
 seeds = [
@@ -40,6 +41,9 @@ seeds = [
 [[rpc_peers]]
     core_rest = "https://api2.neb.exchange"
     endpoint = "api2.neb.exchange:26657"
+[[rpc_peers]]
+    core_rest = "https://api3.neb.exchange"
+    endpoint = "api3.neb.exchange:26657"
 
 [[bootstrap_peers]]
     core_rest = "https://api0.neb.exchange"
@@ -50,3 +54,6 @@ seeds = [
 [[bootstrap_peers]]
     core_rest = "https://api2.neb.exchange"
     endpoint = "/dns/api2.neb.exchange/tcp/4001/ipfs/12D3KooWRGeS5xiJK54ddWaYXy4VxHGzLcN89kaFNS95JgcSSS7z"
+[[bootstrap_peers]]
+    core_rest = "https://api3.neb.exchange"
+    endpoint = "/dns/api3.neb.exchange/tcp/4001/ipfs/12D3KooWCxZxfrySbEmvc1Azmbh9UMD6mZ2EiswtF9c1LgjZF9mq"
